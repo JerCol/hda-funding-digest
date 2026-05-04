@@ -1,0 +1,22 @@
+name: Send Digest Email
+on:
+  push:
+    paths:
+      - 'digest.html'
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send via AgentMail
+        run: |
+          HTML=$(cat digest.html)
+          curl -X POST https://api.agentmail.to/v0/inboxes/hda/messages \
+            -H "Authorization: Bearer ${{ secrets.AGENTMAIL_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"to\": [\"jeroen.colon@hda.fgov.be\"],
+              \"subject\": \"🇪🇺 Daily Funding Digest\",
+              \"html\": $(jq -Rs . < digest.html)
+            }"
