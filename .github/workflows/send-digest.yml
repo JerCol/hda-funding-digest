@@ -4,21 +4,35 @@ on:
     paths:
       - 'digest.html'
   workflow_dispatch:
-      
 
 jobs:
   send:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install AgentMail SDK
+        run: pip install agentmail
+
       - name: Send via AgentMail
+        env:
+          AGENTMAIL_API_KEY: ${{ secrets.AGENTMAIL_API_KEY }}
         run: |
-          HTML=$(cat digest.html)
-          curl -X POST https://api.agentmail.to/v0/inboxes/hda%40agentmail.to/messages \
-            -H "Authorization: Bearer ${{ secrets.AGENTMAIL_API_KEY }}" \
-            -H "Content-Type: application/json" \
-            -d "{
-              \"to\": [\"jeroen.colon@hda.fgov.be\"],
-              \"subject\": \"🇪🇺 Daily Funding Digest\",
-              \"html\": $(jq -Rs . < digest.html)
-            }"
+          python3 - <<'EOF'
+          import os
+          from agentmail import AgentMail
+
+          client = AgentMail(api_key=os.environ["AGENTMAIL_API_KEY"])
+
+          with open("digest.html", "r") as f:
+              html = f.read()
+
+          result = client.inboxes.messages.send(
+              inbox_id="hda@agentmail.to",
+              to=["jeroen.colon@hda.fgov.be"],
+              subject="EU Funding Digest",
+              text="See HTML version",
+              html=html
+          )
+          print("SUCCESS:", result)
+          EOF
