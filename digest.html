@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🇪🇺 Daily Funding Digest — 2026-05-04</title>
+  <title>🇪🇺 Daily Funding Digest — 2026-05-24</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -93,6 +93,9 @@
     .badge.programme {
       background: #0070c0;
     }
+    .badge.closed {
+      background: #888;
+    }
     .meta-row {
       display: flex;
       flex-wrap: wrap;
@@ -141,6 +144,10 @@
       background: #f0f6ff;
       font-size: 14px;
     }
+    .event-card.urgent-event {
+      border-color: #d32f2f;
+      background: #fff8f8;
+    }
     .event-card .event-name {
       font-weight: 700;
       color: #003399;
@@ -179,6 +186,15 @@
       margin-bottom: 14px;
       margin-top: -6px;
     }
+    .update-banner {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 13px;
+      color: #856404;
+      margin-bottom: 14px;
+    }
     hr {
       border: none;
       border-top: 1px solid #e8eaf0;
@@ -191,22 +207,30 @@
 
   <!-- HEADER -->
   <div class="header">
-    <h1>🇪🇺 Daily Funding Digest — 2026-05-04</h1>
+    <h1>🇪🇺 Daily Funding Digest — 2026-05-24</h1>
     <p>Compiled for <strong>jeroen.colon@hda.fgov.be</strong> · HDA Digital Health &amp; Data Governance Unit</p>
   </div>
 
   <!-- BODY -->
   <div class="body">
 
+    <!-- STATUS UPDATES SINCE LAST DIGEST (2026-05-04) -->
+    <div class="update-banner">
+      ⚠️ <strong>Status changes since 2026-05-04 digest:</strong>
+      EIC Pathfinder Open 2026 <strong>closed 12 May</strong> (record 2 103 proposals received) ·
+      DIGITAL-2026-AI-09-GENAI-PA <strong>confirmed closed 3 March</strong> (evaluation results expected end of June) ·
+      EIC Accelerator May cut-off <strong>closed 6 May</strong> (next cut-off: 8 July 2026)
+    </div>
+
     <!-- BLOCK 1 -->
     <h2>🔵 EU Open Calls</h2>
-    <p class="section-intro">Horizon Europe, Digital Europe &amp; EU4Health calls relevant to NGOs and public bodies in digital health, data spaces, and AI governance — open as of 2026-05-04.</p>
+    <p class="section-intro">Horizon Europe, Digital Europe &amp; EU4Health calls relevant to NGOs and public bodies in digital health, data spaces, and AI governance — open as of 2026-05-24.</p>
 
     <!-- Call 1 -->
     <div class="call-card">
       <div class="call-title">
         <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-EHDS" target="_blank">
-          DIGITAL-2026-BESTUSE-10-EHDS — Building Capacity to Deploy EEHRxF &amp; Reuse Health Data under EHDS
+          DIGITAL-2026-BESTUSE-10-EHDS — Deploying EEHRxF &amp; Reusing Health Data under EHDS
         </a>
         <span class="badge programme">Digital Europe</span>
       </div>
@@ -216,18 +240,40 @@
         <span>✅ <strong>Eligibility:</strong> Public bodies, NGOs, consortia — eligible</span>
       </div>
       <div class="meta-row" style="margin-top:6px;">
-        <span>🔗 <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-EHDS" target="_blank">ec.europa.eu Funding &amp; Tenders Portal</a></span>
+        <span>🔗 <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-EHDS" target="_blank">EU Funding &amp; Tenders Portal</a> · <a href="https://hadea.ec.europa.eu/news/new-calls-proposals-under-digital-europe-programme-published-2026-04-10_en" target="_blank">HaDEA announcement (10 Apr 2026)</a></span>
       </div>
       <div style="font-size:13px; color:#444; margin-top:8px;">
-        Three work strands: (1) primary-use/EEHRxF deployment support to public authorities and healthcare providers; (2) secondary-use "toolbox" for Health Data Access Bodies; (3) SME training on EHDS compliance. Cascading grants up to €120 000 for hospitals, clinics, SMEs. <strong>Opened 21 April 2026.</strong>
+        Three work strands: (1) primary-use/EEHRxF deployment support for public authorities and healthcare providers; (2) secondary-use "toolbox" for Health Data Access Bodies; (3) SME/institution training on EHDS compliance. Cascading grants up to €120 000 per third party. <strong>Opened 21 April 2026 — directly relevant to HDA.</strong>
       </div>
     </div>
 
-    <!-- Call 2 -->
+    <!-- Call 2 — NEW -->
+    <div class="call-card">
+      <div class="call-title">
+        <a href="https://hadea.ec.europa.eu/news/new-calls-proposals-under-digital-europe-programme-published-2026-04-10_en" target="_blank">
+          DIGITAL-2026-SKILLS-10-DIGITAL-HEALTH-STEP — AI in Health Education &amp; Training
+        </a>
+        <span class="badge programme">Digital Europe</span>
+        <span class="badge" style="background:#2e7d32;">NEW</span>
+      </div>
+      <div class="meta-row">
+        <span>📅 <strong>Deadline:</strong> 1 October 2026</span>
+        <span>💶 <strong>Budget:</strong> Part of €24.4M EHDS/digital health envelope</span>
+        <span>✅ <strong>Eligibility:</strong> Higher education, research orgs, industry — consortia</span>
+      </div>
+      <div class="meta-row" style="margin-top:6px;">
+        <span>🔗 <a href="https://hadea.ec.europa.eu/news/new-calls-proposals-under-digital-europe-published-2026-04-10_en" target="_blank">hadea.ec.europa.eu — April 2026 Digital Health Calls</a></span>
+      </div>
+      <div style="font-size:13px; color:#444; margin-top:8px;">
+        Funds joint design and delivery of AI-in-health training programmes across higher education, research, and industry partners. Opened 21 April 2026 in the same batch as BESTUSE-10-EHDS. Relevant if HDA co-develops curriculum with academic or hospital partners.
+      </div>
+    </div>
+
+    <!-- Call 3 -->
     <div class="call-card">
       <div class="call-title">
         <a href="https://hadea.ec.europa.eu/news/2026-horizon-europe-health-calls-proposals-2026-02-12_en" target="_blank">
-          HORIZON-HLTH-2026-02 — Partnerships in Health (ERDERA / Rare Disease Research Alliance)
+          HORIZON-HLTH-2026-02 — Partnerships in Health (Rare Disease / ERDERA)
         </a>
         <span class="badge programme">Horizon Europe</span>
       </div>
@@ -240,44 +286,23 @@
         <span>🔗 <a href="https://hadea.ec.europa.eu/news/2026-horizon-europe-health-calls-proposals-2026-02-12_en" target="_blank">hadea.ec.europa.eu — 2026 Health Calls</a></span>
       </div>
       <div style="font-size:13px; color:#444; margin-top:8px;">
-        Collaborative research call within the European Partnership on Rare Diseases (ERDERA). Focus on health data use, patient registries, and interoperability for rare-disease research. Check the EU F&amp;T Portal for individual topic budgets.
+        Collaborative research call within the European Partnership on Rare Diseases (ERDERA). Focus on health data use, patient registries, and interoperability for rare-disease research. Check the EU F&amp;T Portal for individual topic budgets and submission requirements.
       </div>
     </div>
 
-    <!-- Call 3 -->
+    <!-- EU4Health placeholder -->
     <div class="call-card">
-      <div class="call-title">
-        <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?callIdentifier=DIGITAL-2026-AI-09" target="_blank">
-          DIGITAL-2026-AI-09-GENAI-PA — AI Continent: Generative AI for Public Administrations
-        </a>
-        <span class="badge programme">Digital Europe</span>
-      </div>
+      <div class="call-title">EU4Health 2026 Work Programme — Monitoring for New Calls</div>
       <div class="meta-row">
-        <span>📅 <strong>Deadline:</strong> ~1 October 2026</span>
-        <span>💶 <strong>Budget:</strong> TBC (Digital Europe AI Continent envelope)</span>
-        <span>✅ <strong>Eligibility:</strong> Public bodies, NGOs — eligible</span>
-      </div>
-      <div class="meta-row" style="margin-top:6px;">
-        <span>🔗 <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?callIdentifier=DIGITAL-2026-AI-09" target="_blank">EU Funding &amp; Tenders Portal — DIGITAL-2026-AI-09</a></span>
-      </div>
-      <div style="font-size:13px; color:#444; margin-top:8px;">
-        Supports deployment of large language models and Generative AI solutions in public-sector contexts, with emphasis on data governance, transparency, and EU AI Act compliance. Highly relevant to AI governance mandates.
-      </div>
-    </div>
-
-    <!-- Call 4 — EU4Health note -->
-    <div class="call-card">
-      <div class="call-title">EU4Health 2026 Work Programme — New Calls Expected Mid-2026</div>
-      <div class="meta-row">
-        <span>📅 <strong>Status:</strong> 2025 WP closed Jan 2026; 2026 WP under preparation</span>
-        <span>💶 <strong>Previous budget:</strong> ~€56.8M (2025 WP)</span>
-        <span>✅ <strong>Eligibility:</strong> Public bodies, NGOs — eligible</span>
+        <span>📅 <strong>Status:</strong> 2025 WP closed Jan 2026; 2026 WP under finalisation</span>
+        <span>💶 <strong>Previous budget:</strong> ~€56.8M</span>
+        <span>✅ <strong>Eligibility:</strong> Public bodies, NGOs — eligible when published</span>
       </div>
       <div class="meta-row" style="margin-top:6px;">
         <span>🔗 <a href="https://hadea.ec.europa.eu/programmes/eu4health_en" target="_blank">hadea.ec.europa.eu — EU4Health</a></span>
       </div>
       <div style="font-size:13px; color:#444; margin-top:8px;">
-        The EU4Health 2026 Work Programme is currently being finalised; no open calls yet. Monitor HaDEA for publication expected in mid-2026. Previous calls included AI &amp; cardiovascular health data (EU4H-2026-SANTE-PJ-04, €20M).
+        No new open calls as of today. The 2026 Work Programme is expected to be published mid-2026. Previous relevant call: EU4H-2026-SANTE-PJ-08 (Health Data for Biotech Innovations using EHDS, €14.4M, now closed). Monitor HaDEA weekly.
       </div>
     </div>
 
@@ -287,68 +312,46 @@
     <h2>🤖 Tech &amp; AI Calls</h2>
     <p class="section-intro">EIC, NGI, and AI Act implementation funding — includes calls directly relevant to digital health AI and open-source interoperability tooling.</p>
 
-    <!-- EIC Accelerator URGENT -->
+    <!-- NGI Zero URGENT -->
     <div class="call-card urgent">
-      <div class="call-title">
-        <a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en" target="_blank">
-          EIC Accelerator Open 2026 — May Cut-off
-        </a>
-        <span class="badge urgent-badge">🔴 URGENT — 2 days</span>
-        <span class="badge programme">EIC</span>
-      </div>
-      <div class="meta-row">
-        <span>📅 <strong>Cut-off:</strong> 6 May 2026</span>
-        <span>💶 <strong>Budget:</strong> €414 million (Open track)</span>
-        <span>⚠️ <strong>Eligibility:</strong> Primarily startups/SMEs; public bodies not eligible as main applicant</span>
-      </div>
-      <div class="meta-row" style="margin-top:6px;">
-        <span>🔗 <a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en" target="_blank">eic.ec.europa.eu — EIC Accelerator</a></span>
-      </div>
-      <div style="font-size:13px; color:#444; margin-top:8px;">
-        Grants up to €2.5M + equity up to €15M for deep-tech scale-ups. Next cut-offs after May 6: July 8, September 2, November 4. Note eligibility: designed for innovative companies; flag to partner SMEs in your ecosystem.
-      </div>
-    </div>
-
-    <!-- EIC Pathfinder URGENT -->
-    <div class="call-card urgent">
-      <div class="call-title">
-        <a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en" target="_blank">
-          EIC Pathfinder Open 2026
-        </a>
-        <span class="badge urgent-badge">🔴 URGENT — 8 days</span>
-        <span class="badge programme">EIC</span>
-      </div>
-      <div class="meta-row">
-        <span>📅 <strong>Deadline:</strong> 12 May 2026</span>
-        <span>💶 <strong>Budget:</strong> €166 million</span>
-        <span>✅ <strong>Eligibility:</strong> Research organisations, universities, public bodies — eligible</span>
-      </div>
-      <div class="meta-row" style="margin-top:6px;">
-        <span>🔗 <a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en" target="_blank">eic.ec.europa.eu — EIC Pathfinder</a></span>
-      </div>
-      <div style="font-size:13px; color:#444; margin-top:8px;">
-        Frontier research, TRL 1–4. Grants up to €4M. Open to any visionary science with breakthrough potential — health data, AI for rare diseases, privacy-preserving computation, federated architectures all qualify. Consortia of ≥3 entities from ≥3 eligible countries required.
-      </div>
-    </div>
-
-    <!-- NGI Zero -->
-    <div class="call-card">
       <div class="call-title">
         <a href="https://nlnet.nl/commonsfund/" target="_blank">
           NGI Zero Commons Fund — 13th Call
         </a>
+        <span class="badge urgent-badge">🔴 URGENT — 8 days</span>
         <span class="badge programme">NGI / Horizon Europe</span>
       </div>
       <div class="meta-row">
-        <span>📅 <strong>Deadline:</strong> 1 June 2026, 12:00 CEST</span>
-        <span>💶 <strong>Budget:</strong> €5 000 – €50 000 per project (scalable)</span>
-        <span>✅ <strong>Eligibility:</strong> NGOs, public sector, academics, individuals</span>
+        <span>📅 <strong>Deadline: 1 June 2026, 12:00 CEST</strong></span>
+        <span>💶 <strong>Budget:</strong> €5 000 – €50 000 per project (scalable; €21.6M total fund)</span>
+        <span>✅ <strong>Eligibility:</strong> NGOs, public sector, academics, individuals — eligible</span>
       </div>
       <div class="meta-row" style="margin-top:6px;">
         <span>🔗 <a href="https://nlnet.nl/commonsfund/" target="_blank">nlnet.nl/commonsfund</a></span>
       </div>
       <div style="font-size:13px; color:#444; margin-top:8px;">
-        Via NLnet Foundation (funded by NGI / Horizon Europe). Targets open-source, privacy-enhancing and interoperable internet infrastructure. All outputs must be open-source. Ideal for tooling around federated health data, consent management, or EHDS-adjacent open components.
+        Via NLnet Foundation (funded by NGI / Horizon Europe). Targets open-source, privacy-enhancing and interoperable internet infrastructure. <strong>All outputs must be open-source.</strong> Ideal for tooling around federated health data, consent management, EHDS-adjacent components, or SPE open-source utilities. Deadline in 8 days — act immediately if submitting.
+      </div>
+    </div>
+
+    <!-- EIC Accelerator — next cut-off -->
+    <div class="call-card">
+      <div class="call-title">
+        <a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en" target="_blank">
+          EIC Accelerator 2026 — Next Cut-off 8 July 2026
+        </a>
+        <span class="badge programme">EIC</span>
+      </div>
+      <div class="meta-row">
+        <span>📅 <strong>Next cut-off:</strong> 8 July 2026 (then 2 Sep, 4 Nov)</span>
+        <span>💶 <strong>Budget:</strong> €414 million (Open track); up to €2.5M grant + €15M equity</span>
+        <span>⚠️ <strong>Eligibility:</strong> Startups/SMEs only — flag to ecosystem partners</span>
+      </div>
+      <div class="meta-row" style="margin-top:6px;">
+        <span>🔗 <a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en" target="_blank">eic.ec.europa.eu — EIC Accelerator</a></span>
+      </div>
+      <div style="font-size:13px; color:#444; margin-top:8px;">
+        May cut-off closed 6 May. Next full proposal deadline: 8 July 2026. Public bodies and NGOs are not eligible as main applicants — but relevant for SME partners in your health data ecosystem.
       </div>
     </div>
 
@@ -362,35 +365,100 @@
       </div>
       <div class="meta-row">
         <span>📅 <strong>Deadline:</strong> 16 September 2026</span>
-        <span>💶 <strong>Budget:</strong> €100 million (grants usually up to €2.5M)</span>
-        <span>⚠️ <strong>Eligibility:</strong> Requires prior EIC Pathfinder / ERC Proof-of-Concept results</span>
+        <span>💶 <strong>Budget:</strong> €100 million (grants €0.5M – €2.5M)</span>
+        <span>⚠️ <strong>Eligibility:</strong> SMEs, universities, research orgs — requires prior EIC/ERC project</span>
       </div>
       <div class="meta-row" style="margin-top:6px;">
         <span>🔗 <a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en" target="_blank">eic.ec.europa.eu — EIC Transition</a></span>
       </div>
       <div style="font-size:13px; color:#444; margin-top:8px;">
-        Bridges frontier research to market-ready innovation (TRL 3–6). Check if any running EIC/ERC projects in your network qualify for follow-on Transition funding in health data or AI.
+        Bridges frontier research to market-ready innovation (TRL 3–6). Must build on a prior EIC Pathfinder or ERC Proof-of-Concept project active ≥12 months or completed &lt;24 months ago. Check if projects in your network qualify for follow-on funding in health data or AI.
+      </div>
+    </div>
+
+    <!-- NGI Fediversity — NEW -->
+    <div class="call-card">
+      <div class="call-title">
+        <a href="https://nlnet.nl/fediversity/" target="_blank">
+          NGI Fediversity — Open Call 2026-02F
+        </a>
+        <span class="badge programme">NGI / Horizon Europe</span>
+        <span class="badge" style="background:#2e7d32;">NEW</span>
+      </div>
+      <div class="meta-row">
+        <span>📅 <strong>Deadline:</strong> Check nlnet.nl/fediversity for current cut-off</span>
+        <span>💶 <strong>Budget:</strong> Small to medium grants (up to €50 000, scalable)</span>
+        <span>✅ <strong>Eligibility:</strong> NGOs, researchers, individuals, public sector</span>
+      </div>
+      <div class="meta-row" style="margin-top:6px;">
+        <span>🔗 <a href="https://nlnet.nl/fediversity/" target="_blank">nlnet.nl/fediversity</a> · <a href="https://atomgrants.com/grant/ngi-fediversity-open-call-2026-02f-european-commission" target="_blank">atomgrants.com listing</a></span>
+      </div>
+      <div style="font-size:13px; color:#444; margin-top:8px;">
+        Supports federated, privacy-respecting internet technologies. Relevant for federated identity, consent management, and decentralised data-sharing tools that could complement EHDS secondary-use access infrastructure. All outputs must be open-source.
+      </div>
+    </div>
+
+    <!-- NGI TrustChain — NEW -->
+    <div class="call-card">
+      <div class="call-title">
+        <a href="https://trustchain.ngi.eu/open-call-5/" target="_blank">
+          NGI TrustChain Open Call #5 — Green, Scalable &amp; Sustainable DLTs
+        </a>
+        <span class="badge programme">NGI / Horizon Europe</span>
+        <span class="badge" style="background:#2e7d32;">NEW</span>
+      </div>
+      <div class="meta-row">
+        <span>📅 <strong>Deadline:</strong> Open — see trustchain.ngi.eu for cut-off date</span>
+        <span>💶 <strong>Budget:</strong> Small grants via cascade funding</span>
+        <span>✅ <strong>Eligibility:</strong> Startups, SMEs, research organisations, NGOs</span>
+      </div>
+      <div class="meta-row" style="margin-top:6px;">
+        <span>🔗 <a href="https://trustchain.ngi.eu/open-call-5/" target="_blank">trustchain.ngi.eu/open-call-5</a></span>
+      </div>
+      <div style="font-size:13px; color:#444; margin-top:8px;">
+        Focus on energy-efficient, scalable, trustworthy distributed ledger technologies. Relevant for audit trails, consent registries, and provenance tracking in health data access governance. Must be open-source.
+      </div>
+    </div>
+
+    <!-- ICT Standardisation -->
+    <div class="call-card">
+      <div class="call-title">
+        <a href="https://digital-strategy.ec.europa.eu/en/activities/digital-programme" target="_blank">
+          Digital Europe — ICT Standardisation Activities (AI &amp; Interoperability)
+        </a>
+        <span class="badge programme">Digital Europe</span>
+      </div>
+      <div class="meta-row">
+        <span>📅 <strong>Deadline:</strong> 15 September 2026</span>
+        <span>📅 <strong>Opened:</strong> 3 March 2026</span>
+        <span>✅ <strong>Eligibility:</strong> Standards bodies, research orgs, public sector participants</span>
+      </div>
+      <div class="meta-row" style="margin-top:6px;">
+        <span>🔗 <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals" target="_blank">EU Funding &amp; Tenders Portal</a></span>
+      </div>
+      <div style="font-size:13px; color:#444; margin-top:8px;">
+        Funds EU experts to contribute to international ICT standardisation activities including AI and emerging technologies. Directly relevant for strengthening Belgium's voice in ISO/IEC/CEN/CENELEC standards work on health data interoperability and AI governance under the AI Act.
       </div>
     </div>
 
     <!-- AI Regulatory Sandboxes -->
     <div class="call-card">
       <div class="call-title">
-        <a href="https://digital-strategy.ec.europa.eu/en/consultations/commission-seeks-feedback-draft-implementing-act-establish-ai-regulatory-sandboxes-under-ai-act" target="_blank">
-          EU AI Act — AI Regulatory Sandboxes (EUSAiR / TEF support)
+        <a href="https://artificialintelligenceact.eu/ai-regulatory-sandbox-approaches-eu-member-state-overview/" target="_blank">
+          EU AI Act — AI Regulatory Sandboxes (EUSAiR / TEF Support)
         </a>
         <span class="badge programme">Digital Europe</span>
       </div>
       <div class="meta-row">
-        <span>📅 <strong>Key date:</strong> Member States must have sandboxes operational by 2 August 2026</span>
+        <span>📅 <strong>Key milestone:</strong> Member States must have sandboxes operational by 2 August 2026</span>
         <span>💶 <strong>TEF funding:</strong> &gt;€220M allocated to Testing &amp; Experimentation Facilities</span>
-        <span>✅ <strong>Eligibility:</strong> Public bodies, digital innovation hubs — eligible</span>
+        <span>✅ <strong>Eligibility:</strong> Public bodies, Digital Innovation Hubs — eligible</span>
       </div>
       <div class="meta-row" style="margin-top:6px;">
         <span>🔗 <a href="https://artificialintelligenceact.eu/ai-regulatory-sandbox-approaches-eu-member-state-overview/" target="_blank">AI Act — Member State Sandbox Overview</a></span>
       </div>
       <div style="font-size:13px; color:#444; margin-top:8px;">
-        The EUSAiR project (Digital Europe) supports sandbox implementation across Member States. Only Spain has an operational sandbox as of early 2026; 16 MS have not communicated plans — significant advisory/support opportunity. Health AI is an explicit priority use case.
+        The EUSAiR project (Digital Europe) supports sandbox implementation across Member States. Only Spain has an operational sandbox as of early 2026; 16 MS have not communicated plans. Health AI is an explicit priority use case. <strong>August 2026 deadline is approaching — advisory/co-development opportunity for HDA.</strong>
       </div>
     </div>
 
@@ -400,12 +468,12 @@
     <h2>🏥 EHDS / SPE Updates</h2>
     <p class="section-intro">Secondary use implementation, Secure Processing Environment tooling, and upcoming consultations &amp; events.</p>
 
-    <h3 style="font-size:14.5px; font-weight:700; color:#0056b3; margin:14px 0 10px;">Open Calls</h3>
+    <h3 style="font-size:14.5px; font-weight:700; color:#0056b3; margin:14px 0 10px;">Open Calls &amp; Tenders</h3>
 
     <div class="call-card">
       <div class="call-title">
         <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-EHDS" target="_blank">
-          DIGITAL-2026-BESTUSE-10-EHDS — EHDS Capacity Building for EEHRxF &amp; Secondary Use
+          DIGITAL-2026-BESTUSE-10-EHDS — EHDS Secondary-Use Toolbox &amp; Capacity Building
         </a>
         <span class="badge programme">Digital Europe</span>
       </div>
@@ -415,10 +483,30 @@
         <span>✅ <strong>Eligibility:</strong> Public bodies, NGOs, research orgs</span>
       </div>
       <div class="meta-row" style="margin-top:6px;">
-        <span>🔗 <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-EHDS" target="_blank">EU Funding &amp; Tenders Portal</a> · <a href="https://hadea.ec.europa.eu/news/new-calls-proposals-under-digital-europe-programme-published-2026-04-10_en" target="_blank">HaDEA announcement (10 Apr 2026)</a></span>
+        <span>🔗 <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/DIGITAL-2026-BESTUSE-10-EHDS" target="_blank">EU Funding &amp; Tenders Portal</a></span>
       </div>
       <div style="font-size:13px; color:#444; margin-top:8px;">
-        <strong>Most directly relevant call for HDA.</strong> Covers EHDS secondary-use toolbox development, dataset cataloguing and quality labels for Health Data Access Bodies, and cross-border compliance training. Cascading grants to healthcare institutions up to €120K each.
+        <strong>Most directly relevant call for HDA.</strong> Work strand 2 funds development of the EHDS secondary-use "toolbox" specifically for Health Data Access Bodies — dataset cataloguing, quality labels, cross-border access tooling, and HDAB operational guidance. Cascading grants to institutions up to €120K each.
+      </div>
+    </div>
+
+    <div class="call-card">
+      <div class="call-title">
+        <a href="https://hadea.ec.europa.eu/calls-tenders/support-stakeholders-secondary-use-data-within-european-health-data-space_en" target="_blank">
+          HaDEA Tender — Support to Stakeholders on EHDS Secondary Use
+        </a>
+        <span class="badge programme">HaDEA / Digital Europe</span>
+        <span class="badge" style="background:#2e7d32;">NEW</span>
+      </div>
+      <div class="meta-row">
+        <span>📅 <strong>Status:</strong> Procurement tender — check HaDEA for current publication status</span>
+        <span>✅ <strong>Eligibility:</strong> Service providers and consortia to support compliance &amp; rollout</span>
+      </div>
+      <div class="meta-row" style="margin-top:6px;">
+        <span>🔗 <a href="https://hadea.ec.europa.eu/calls-tenders/support-stakeholders-secondary-use-data-within-european-health-data-space_en" target="_blank">hadea.ec.europa.eu — EHDS Secondary Use Tender</a></span>
+      </div>
+      <div style="font-size:13px; color:#444; margin-top:8px;">
+        A procurement call (not grant) to support key stakeholders in complying with EHDS requirements and technical specifications, supporting collaboration in the rollout and operations of HealthData@EU. Relevant as a potential service contract for technical advisory or implementation capacity.
       </div>
     </div>
 
@@ -426,45 +514,66 @@
 
     <div class="news-item">
       <div class="news-title">
-        <a href="https://ec.europa.eu/newsroom/sante/items/876307/" target="_blank">EC Releases Open-Source HealthData@EU Central Platform</a>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12222193/" target="_blank">New Research: PETs for EHDS Secondary Use — Framework &amp; Research Agenda</a>
       </div>
       <div style="font-size:13.5px; color:#333; margin-top:4px;">
-        The European Commission published the source code of the HealthData@EU Central Platform on <a href="https://code.europa.eu" target="_blank">code.europa.eu</a>, providing reusable open-source components for Member States to connect national health data catalogues, access points, and HDABs to the EU-level EHDS secondary-use infrastructure.
+        A peer-reviewed paper published in PMC sets out the scene for privacy-enhancing technologies (PETs) in EHDS secondary use and proposes a research agenda — covering federated learning, synthetic data, homomorphic encryption, and secure multi-party computation as candidate SPE building blocks.
       </div>
-      <div class="news-meta">📅 2026 · Platform: code.europa.eu · Built on HealthDCAT-AP metadata standard, reuses Piveau-Hub components · <a href="https://ec.europa.eu/newsroom/sante/items/876307/" target="_blank">EC Newsroom</a></div>
+      <div class="news-meta">📅 2026 · PMC/NCBI · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12222193/" target="_blank">pmc.ncbi.nlm.nih.gov/articles/PMC12222193</a></div>
     </div>
 
     <div class="news-item">
       <div class="news-title">
-        <a href="https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=887383631" target="_blank">EHDS2 Central Platform v3 Goes Open Source with eDelivery Integration</a>
+        <a href="https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/105207/GATEKEEPER_Platform_Secure_Processing_Environment_for_European_Health_Data_Space.pdf" target="_blank">Gatekeeper Platform: Kubernetes-Based SPE for EHDS</a>
       </div>
       <div style="font-size:13.5px; color:#333; margin-top:4px;">
-        Version 3 of the EHDS2 Central Platform is now open source, featuring enhanced eDelivery integration for secure, standards-based cross-border transmission of health data between national nodes — a direct building block for SPE-adjacent federated architectures.
+        The Gatekeeper project (QMUL/EU consortium) published its SPE architecture for EHDS, using Kubernetes for tenant-specific service deployment with HPC, storage and horizontal scaling — a concrete open reference architecture for cloud-native EHDS Secure Processing Environments.
       </div>
-      <div class="news-meta">📅 2026 · <a href="https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=887383631" target="_blank">EC Digital Building Blocks</a></div>
+      <div class="news-meta">📅 2025–2026 · QMUL / EU pilot · <a href="https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/105207/GATEKEEPER_Platform_Secure_Processing_Environment_for_European_Health_Data_Space.pdf" target="_blank">PDF — QMRO</a></div>
     </div>
 
     <div class="news-item">
       <div class="news-title">
-        <a href="https://errin.eu/calls/safeguarding-innovation-secondary-use-health-data-european-health-data-space-ehds" target="_blank">ERRIN: Safeguarding Innovation in Secondary Use of Health Data (EHDS)</a>
+        <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/ehds-action/projects-supporting-ehds_en" target="_blank">EHDS Regulation Now in Application — Secondary Use Framework Active from March 2026</a>
       </div>
       <div style="font-size:13.5px; color:#333; margin-top:4px;">
-        ERRIN summarises calls and consortium opportunities related to protecting innovation pipelines in the EHDS secondary-use framework — useful aggregator for regional/city actors and public bodies looking for consortium entry points.
+        The EHDS Regulation applies from 26 March 2026. Health Data Access Bodies must be designated by Member States by 26 March 2027. Secondary use rules for most data categories enter full application in March 2029 — but HDAB setup, SPE provisioning, and permit workflows must begin now.
       </div>
-      <div class="news-meta">📅 Ongoing · <a href="https://errin.eu/calls/safeguarding-innovation-secondary-use-health-data-european-health-data-space-ehds" target="_blank">errin.eu</a></div>
+      <div class="news-meta">📅 March 2026 · EC Health · <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/ehds-action/projects-supporting-ehds_en" target="_blank">health.ec.europa.eu — Projects supporting EHDS</a></div>
     </div>
 
-    <h3 style="font-size:14.5px; font-weight:700; color:#0056b3; margin:18px 0 10px;">Events (next 60 days)</h3>
+    <div class="news-item">
+      <div class="news-title">
+        <a href="https://www.health-data-hub.fr/page/healthdataeu-pilot" target="_blank">HealthData@EU Pilot — Outcomes Published, Infrastructure Recommendations Available</a>
+      </div>
+      <div style="font-size:13.5px; color:#333; margin-top:4px;">
+        The HealthData@EU Pilot (Oct 2022 – Dec 2024), led by France's Health Data Hub with 16 EU partners and 12 countries, published its final outcomes: network infrastructure recommendations, SPE data access workflows, HDAB governance templates, and reusable open-source connection components for national nodes.
+      </div>
+      <div class="news-meta">📅 2024–2026 · Health Data Hub / EC · <a href="https://www.health-data-hub.fr/page/healthdataeu-pilot" target="_blank">health-data-hub.fr</a> · <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/ehds-action/projects-supporting-ehds_en" target="_blank">EC EHDS projects page</a></div>
+    </div>
 
-    <div class="event-card">
+    <div class="news-item">
+      <div class="news-title">
+        <a href="https://errin.eu/calls/safeguarding-innovation-secondary-use-health-data-european-health-data-space-ehds" target="_blank">ERRIN: Safeguarding Innovation in EHDS Secondary Use — Consortium Entry Points</a>
+      </div>
+      <div style="font-size:13.5px; color:#333; margin-top:4px;">
+        ERRIN aggregates consortium opportunities and call summaries for regional/city actors and public bodies seeking entry into EHDS secondary-use projects — useful for identifying potential co-applicant partners for DIGITAL-2026-BESTUSE-10-EHDS.
+      </div>
+      <div class="news-meta">📅 Ongoing · ERRIN · <a href="https://errin.eu/calls/safeguarding-innovation-secondary-use-health-data-european-health-data-space-ehds" target="_blank">errin.eu</a></div>
+    </div>
+
+    <h3 style="font-size:14.5px; font-weight:700; color:#0056b3; margin:18px 0 10px;">Events (next 60 days — to 23 July 2026)</h3>
+
+    <div class="event-card urgent-event">
       <div class="event-name">
         <a href="https://tehdas.eu/public-consultations/" target="_blank">
-          TEHDAS2 Public Consultation — Wave 3: Collaboration, Data Enrichment &amp; Citizen Information
+          TEHDAS2 Public Consultation Wave 3 — HDAB Guidelines on International Access, Data Enrichment &amp; Citizen Information
         </a>
+        <span class="badge urgent-badge" style="font-size:11px;">🔴 Closes 28 June</span>
       </div>
       <div class="event-meta">
-        📅 <strong>5 May – 28 June 2026</strong> &nbsp;|&nbsp; 🌐 Online &nbsp;|&nbsp;
-        Focus: Draft HDAB guidelines on international data access, third-country collaboration, dataset enrichment &amp; linkage, and informing citizens. Open for written input from all stakeholders.
+        📅 <strong>5 May – 28 June 2026</strong> &nbsp;|&nbsp; 🌐 Online (written input) &nbsp;|&nbsp;
+        Covers draft HDAB guidelines on: international data access and third-country collaboration; dataset enrichment and linkage; informing citizens. Open to all stakeholders — HDA should submit input as a designated HDAB.
         <br/><a href="https://tehdas.eu/public-consultations/" target="_blank">tehdas.eu/public-consultations</a>
       </div>
     </div>
@@ -472,12 +581,12 @@
     <div class="event-card">
       <div class="event-name">
         <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds/european-health-data-space-ehds-webinar-series_en" target="_blank">
-          EC EHDS Webinar Series — Ongoing (watch for new sessions)
+          EC EHDS Webinar Series — Monitor for New Sessions
         </a>
       </div>
       <div class="event-meta">
         📅 <strong>Dates TBC — monitor EC health portal</strong> &nbsp;|&nbsp; 🌐 Online
-        <br/>Previous sessions covered primary use, secondary use, and governance. New sessions expected as the EHDS implementing acts and delegated acts are published in 2026.
+        <br/>Previous sessions covered primary use (Feb 2025), secondary use (Feb 2025), and governance (Mar 2025). New sessions expected as EHDS implementing and delegated acts are published through 2026.
         <br/><a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds/european-health-data-space-ehds-webinar-series_en" target="_blank">health.ec.europa.eu — EHDS Webinar Series</a>
       </div>
     </div>
@@ -485,13 +594,26 @@
     <div class="event-card">
       <div class="event-name">
         <a href="https://digital-strategy.ec.europa.eu/en/events/info-day-digital-health-topics-under-digital-europe-programme-9th-call-proposals" target="_blank">
-          Digital Europe Digital Health Topics Info Day — 9th Call for Proposals
+          Digital Europe Digital Health Topics Info Day — 9th Call (DIGITAL-2026-BESTUSE-10-EHDS)
         </a>
       </div>
       <div class="event-meta">
-        📅 <strong>Date TBC — check digital-strategy.ec.europa.eu</strong> &nbsp;|&nbsp; 🌐 Online (expected)
-        <br/>Info day covering the newly published Digital Europe digital health topics including DIGITAL-2026-BESTUSE-10-EHDS. Register via EC Digital Strategy portal.
+        📅 <strong>Date TBC — watch digital-strategy.ec.europa.eu</strong> &nbsp;|&nbsp; 🌐 Online (expected)
+        <br/>Info day for the April 2026 Digital Europe digital health calls including DIGITAL-2026-BESTUSE-10-EHDS and DIGITAL-2026-SKILLS-10-DIGITAL-HEALTH-STEP. Registration via EC Digital Strategy portal.
         <br/><a href="https://digital-strategy.ec.europa.eu/en/events/info-day-digital-health-topics-under-digital-europe-programme-9th-call-proposals" target="_blank">digital-strategy.ec.europa.eu</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-name">
+        <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/ehds-action/projects-supporting-ehds/health-data-access-bodies-community-practice_en" target="_blank">
+          HDABs Community of Practice — Ongoing Coordination Meetings
+        </a>
+      </div>
+      <div class="event-meta">
+        📅 <strong>Recurring meetings — dates via EC Health portal</strong> &nbsp;|&nbsp; 🌐 Online + in-person Brussels
+        <br/>The HDABs-CoP was established January 2024 to improve preparedness for EHDS secondary-use requirements and converge HDAB procedures across Member States. HDA as Belgium's HDAB designee should monitor and participate.
+        <br/><a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/ehds-action/projects-supporting-ehds/health-data-access-bodies-community-practice_en" target="_blank">health.ec.europa.eu — HDABs Community of Practice</a>
       </div>
     </div>
 
@@ -499,13 +621,15 @@
 
   <!-- FOOTER -->
   <div class="footer">
-    <strong>Digest generated by Claude Code Routine</strong> · 2026-05-04<br/>
+    <strong>Digest generated by Claude Code Routine</strong> · 2026-05-24<br/>
     <strong>Sources searched today:</strong>
-    hadea.ec.europa.eu · ec.europa.eu/info/funding-tenders · eic.ec.europa.eu · digital-strategy.ec.europa.eu ·
-    health.ec.europa.eu · nlnet.nl · tehdas.eu · errin.eu · eufundingportal.eu · eucalls.net ·
-    eurobloodnet.eu · artificialintelligenceact.eu · epthinktank.eu · iuk-business-connect.org.uk<br/><br/>
+    ec.europa.eu/info/funding-tenders · hadea.ec.europa.eu · eic.ec.europa.eu · digital-strategy.ec.europa.eu ·
+    health.ec.europa.eu · nlnet.nl · tehdas.eu · errin.eu · pmc.ncbi.nlm.nih.gov · qmro.qmul.ac.uk ·
+    atomgrants.com · trustchain.ngi.eu · ngi.eu · kaila.eu · grantsfinder.eu · eufundingportal.eu ·
+    artificialintelligenceact.eu · health-data-hub.fr · sciensano.be · bbmri-eric.eu<br/><br/>
     <em>Only calls with future deadlines are included. 🔴 URGENT = deadline within 14 days.
-    EU4Health 2026 Work Programme calls not yet published — monitor HaDEA for release.</em>
+    EIC Pathfinder Open 2026 closed 12 May (2 103 proposals). DIGITAL-2026-AI-09-GENAI-PA closed 3 March (results expected end of June).
+    EU4Health 2026 Work Programme calls not yet published — monitor HaDEA.</em>
   </div>
 
 </div>
